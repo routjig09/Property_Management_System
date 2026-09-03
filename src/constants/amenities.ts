@@ -1,0 +1,20 @@
+export const AMENITIES = [
+  { value: 'Lift', label: 'Lift', icon: 'arrow-up-down' },
+  { value: 'Swimming Pool', label: 'Swimming Pool', icon: 'waves' },
+  { value: 'Gym', label: 'Gym', icon: 'dumbbell' },
+  { value: 'Clubhouse', label: 'Clubhouse', icon: 'tent' },
+  { value: 'Parking', label: 'Parking', icon: 'car' },
+  { value: 'Security', label: 'Security', icon: 'shield-check' },
+  { value: 'Power Backup', label: 'Power Backup', icon: 'zap' },
+  { value: 'Garden', label: 'Garden', icon: 'flower-2' },
+  { value: 'Children\'s Play Area', label: 'Children\'s Play Area', icon: 'smile' },
+  { value: 'Intercom', label: 'Intercom', icon: 'phone' },
+  { value: 'Fire Safety', label: 'Fire Safety', icon: 'flame' },
+  { value: 'Rain Water Harvesting', label: 'Rain Water Harvesting', icon: 'cloud-rain' },
+  { value: 'Jogging Track', label: 'Jogging Track', icon: 'footprints' },
+  { value: 'Indoor Games', label: 'Indoor Games', icon: 'gamepad-2' },
+  { value: 'Visitor Parking', label: 'Visitor Parking', icon: 'car' },
+  { value: 'CCTV', label: 'CCTV', icon: 'video' },
+  { value: 'Gated Community', label: 'Gated Community', icon: 'door-closed' },
+  { value: 'Maintenance Staff', label: 'Maintenance Staff', icon: 'wrench' }
+];
