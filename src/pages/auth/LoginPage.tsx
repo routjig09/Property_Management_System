@@ -38,22 +38,21 @@ export function LoginPage() {
   };
 
   return (
-    // <div className="min-h-screen bg-ivory flex">
-    <div className="h-dvh overflow-hidden bg-ivory flex">
+    <div className="h-screen overflow-hidden bg-ivory flex">
       {/* Left: Form */}
-      <div className="flex-1 h-dvh flex items-center justify-center px-6 py-6">
+      <div className="flex-1 h-screen flex items-center justify-center px-6 py-4 overflow-y-auto">
         <div className="w-full max-w-md">
           <div className="mb-5">
             <Link to="/">
-              <Logo variant="full" size="lg" className="mb-4" />
+              <Logo variant="full" size="md" className="mb-5" />
             </Link>
-            <h1 className="text-3xl font-heading font-bold text-navy-900 mb-2">Welcome back</h1>
-            <p className="text-navy-500 font-body">Sign in to continue to PropSync</p>
+            <h1 className="text-2xl font-heading font-bold text-navy-900 mb-1">Welcome back</h1>
+            <p className="text-navy-500 font-body text-sm">Sign in to continue to PropSync</p>
           </div>
 
           <form onSubmit={handleSubmit(onSubmit)} className="space-y-3">
             {errors.root && (
-              <div className="p-3 rounded-lg bg-error-light text-error text-sm font-body">
+              <div className="p-2.5 rounded-lg bg-error-light text-error text-sm font-body">
                 {errors.root.message}
               </div>
             )}
@@ -91,7 +90,7 @@ export function LoginPage() {
             </Button>
           </form>
 
-          <p className="mt-4 text-center text-sm font-body text-navy-500">
+          <p className="mt-5 text-center text-sm font-body text-navy-500">
             Don't have an account?{' '}
             <Link to="/register" className="text-gold font-medium hover:text-gold-dark">
               Create one
@@ -108,18 +107,18 @@ export function LoginPage() {
       </div>
 
       {/* Right: Image */}
-      <div className="hidden lg:block lg:w-1/2 relative">
+      <div className="hidden lg:block lg:w-1/2 h-screen relative">
         <img
           src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&h=1600&fit=crop"
           alt=""
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-navy-900/30 to-transparent" />
-        <div className="absolute bottom-12 left-12 right-12">
-          <h2 className="text-white font-heading text-3xl font-bold mb-3">
+        <div className="absolute bottom-10 left-10 right-10">
+          <h2 className="text-white font-heading text-2xl font-bold mb-2">
             Your dream property awaits
           </h2>
-          <p className="text-white/60 font-body">
+          <p className="text-white/60 font-body text-sm">
             Join thousands of property seekers who trust PropSync.
           </p>
         </div>
